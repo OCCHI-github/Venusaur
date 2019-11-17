@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:id="@+id/dateLabel0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateLabel0" />
+
+        <TextView
+            android:id="@+id/telop0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Telop0" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image0"
+            android:layout_width="50dp"
+            android:layout_height="31dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/line0">
+
+        <TextView
+            android:id="@+id/dateLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateLabel1" />
+
+        <TextView
+            android:id="@+id/telop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Telop1" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image1"
+            android:layout_width="50dp"
+            android:layout_height="31dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
